@@ -1,4 +1,5 @@
 import random
+import time
 import math
 
 STD_DECK = ['2', '2', '2', '2', '3', '3', '3', '3',
@@ -71,6 +72,7 @@ class Player:
 
 class GameManager:
     def __init__(self):
+        random.seed(int(time.time()))
         self.deck = []
         self.dealer = Player("Dealer", 0)
         self.players = []
