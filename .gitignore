@@ -1,0 +1,13 @@
+# --- Python Virt Env ---
+venv/
+ENV/
+env/
+
+# --- Python Runtime ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db

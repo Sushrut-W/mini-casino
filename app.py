@@ -7,6 +7,10 @@ CORS(app)
 
 game = GameManager()
 
+@app.route('/')
+def index():
+    return "Blackjack API is running! Use /state to check the game."
+
 @app.route('/start', methods=['POST'])
 def start_game():
     data = request.get_json()
